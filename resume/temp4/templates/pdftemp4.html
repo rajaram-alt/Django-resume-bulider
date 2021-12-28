@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+</head>
+
+<body>
+    {% csrf_token %}
+    <h1 style="font-size:5; font-weight:bold; background-color:aqua;text-align:center">
+        <img src="{{ data.image.path }}" style="height:200px;width:200px">
+    <br>
+    {{ data.name }}
+        <br>
+        {{ data.degree }}
+    </h1>
+    <div class="container">
+        <h2 style="background-color:aqua"><br>  PROFILE :-
+            ________________________________________________________________________________________________________
+            <br><br>
+            {{ data.propoint_1 }} 
+            <br>
+            {{ data.propoint_2 }} 
+            <br>
+            {{ data.propoint_3 }} 
+            <br>
+            {{ data.propoint_4 }} 
+            <br>
+        </h2>
+        <h2 style="background-color:aqua"><br> LANGUAGES_KNOWN :-<br>
+            _________________________________________________________________________________________________________
+            <br>
+
+                <br>
+                {{ data.lang_1 }}<br>
+                <br>
+                {{ data.lang_2 }}<br>
+                <br>
+                {{ data.lang_3 }}<br>
+                <br>
+        </h2>
+        <h2 style="background-color:aqua"><br> PERSONAL INFORMATION :- <br>
+            ________________________________________________________________________________________________________
+            <br>
+            <br>
+            Address :- {{ data.Address }}<br>
+            <br>
+            DOB :- {{ data.Date_of_birth }}
+            <br>
+            <br>
+            Father Name :- {{ data.father_name }}
+            <br>
+        </h2>
+        <h2 style="background-color:aqua"><br>CONTACT INFO :- <br>
+            _________________________________________________________________________________________________________
+            <br>
+                Phone number :- {{ data.mobileno }}<br>
+                <br>
+                Email :- {{ data.email }}<br>
+                <br>
+        </h2>
+        <h2 style="background-color:aqua"><br>EDUCTAIONAL QUALIFICATION :-
+        _________________________________________________________________________________________________________
+        <table style="border:1px solid black;background-color:aqua">
+            <tr>
+                <td style="text-align:center"><br>Qualification<br></td>
+                <td style="text-align:center"><br>Board<br></td>
+                <td style="text-align:center"><br>Percentage / Grades<br></td>
+                <td style="text-align:center"><br>Year<br></td>
+            </tr>
+            <tr>
+                <td style="text-align:center"><br>{{ data.course_1 }}<br></td>
+                <td style="text-align:center"><br>{{ data.school_1 }}<br></td>
+                <td style="text-align:center"><br>{{ data.percent_1 }}<br></td>
+                <td style="text-align:center"><br>{{ data.year_1 }}<br></td>
+            </tr>
+            <tr>
+                <td style="text-align:center"><br>{{ data.course_2 }}<br></td>
+                <td style="text-align:center"><br>{{ data.school_2 }}<br></td>
+                <td style="text-align:center"><br>{{ data.percent_2 }}<br></td>
+                <td style="text-align:center"><br>{{ data.year_2 }}<br></td>
+            </tr>
+            <tr>
+                <td style="text-align:center"><br>{{ data.course_3 }}<br></td>
+                <td style="text-align:center"><br>{{ data.college }}<br></td>
+                <td style="text-align:center"><br>{{ data.percent_3 }}<br></td>
+                <td style="text-align:center"><br>{{ data.year_3 }}<br></td>
+            </tr>
+        </table>
+        </h2>
+        <h2 style="background-color: aqua;">
+            <br>SKILLS :- <br>
+            _________________________________________________________________________________________________________
+
+            <br>
+               {{ data.skill_1 }}<br>
+               <br>
+               {{ data.skill_2 }}<br>
+               <br>
+               {{ data.skill_3 }}<br>
+               <br>
+               {{ data.skill_4 }}<br>
+               <br>
+               {{ data.skill_5 }}<br>
+               <br>
+       </h2>
+        <h2 style="background-color:aqua"><br>HOBBIES :- <br>
+              _________________________________________________________________________________________________________
+              <br>
+
+                <br>
+                {{ data.hobby_1 }}<br>
+                <br>
+                {{ data.hobby_2 }}<br>
+                <br>
+                {{ data.hobby_3 }}<br>
+                <br>
+        </h2>
+        <h2 style="background-color:aqua"><br>INTERNSHIP :-<br>
+            _________________________________________________________________________________________________________
+            <br>
+
+              <br>
+              {{ data.intern_1 }}<br>
+              <br>
+              {{ data.intern_2 }}<br>
+              <br>
+        </h2>
+        <h2 style="background-color:aqua"><br> DECLARTION :-<br>
+            _________________________________________________________________________________________________________
+            <br>
+
+                <br>
+                {{ data.declare }}<br>
+                <br>
+        </h2>
+    </div>
+     
+</body>
+
+</html>
